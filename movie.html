@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            color: #ffffff; /* White text */
+        }
+
+        .c {
+            display: flex;
+            flex-direction: row;
+            background-color: #1e1e1e; /* Dark card background */
+            border: 2px solid #444;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            margin-bottom: 25px;
+            width: 850px;
+        }
+
+        .c img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            border-right: 2px solid #444;
+        }
+
+        .info {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .info h3 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #ffffff; /* White title */
+        }
+
+        .info .genre {
+            font-weight: bold;
+            color: #4dabf7; /* Light blue for genre */
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 15px;
+            color: #e0e0e0; /* Light gray for paragraph text */
+            margin: 6px 0;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #ffffff; /* White for labels */
+        }
+
+        .floating-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+        }
+
+        .floating-box h4 {
+            margin: 0 0 8px;
+            font-size: 16px;
+            color: #4dabf7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="c">
+        <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Interstellar"/>
+        <div class="info">
+            <h3>Interstellar (2014)</h3>
+            <p class="genre">Genre: Sci-Fi, Adventure, Drama</p>
+            <p><span class="label">Director:</span> Christopher Nolan</p>
+            <p><span class="label">Release Year:</span> 2014</p>
+            <p><span class="label">IMDb Rating:</span> 8.6/10</p>
+            <p><span class="label">Plot:</span> A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival as Earth becomes uninhabitable.</p>
+            <p><span class="label">Notable:</span> Groundbreaking visual effects, scientifically accurate black hole depiction, emotional storyline.</p>
+        </div>
+    </div>
+
+    <div class="c">
+        <img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" alt="The Matrix"/>
+        <div class="info">
+            <h3>The Matrix (1999)</h3>
+            <p class="genre">Genre: Sci-Fi, Action</p>
+            <p><span class="label">Director:</span> The Wachowskis</p>
+            <p><span class="label">Release Year:</span> 1999</p>
+            <p><span class="label">IMDb Rating:</span> 8.7/10</p>
+            <p><span class="label">Plot:</span> A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+            <p><span class="label">Notable:</span> Revolutionary bullet time effects, philosophical themes, iconic action sequences.</p>
+        </div>
+    </div>
+
+    <div class="c">
+        <img src="https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_.jpg" alt="Gravity"/>
+        <div class="info">
+            <h3>Gravity (2013)</h3>
+            <p class="genre">Genre: Sci-Fi, Thriller, Drama</p>
+            <p><span class="label">Director:</span> Alfonso Cuarón</p>
+            <p><span class="label">Release Year:</span> 2013</p>
+            <p><span class="label">IMDb Rating:</span> 7.7/10</p>
+            <p><span class="label">Plot:</span> Two astronauts work together to survive after an accident leaves them stranded in space with limited oxygen and no communication with Earth.</p>
+            <p><span class="label">Notable:</span> Academy Award winner for Best Director, groundbreaking visual effects, intense single-take opening scene.</p>
+        </div>
+    </div>
+
+    <div class="c">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzU3YWYwNTQtZTdiMC00NjY5LTlmMTMtZDFlYTEyODBjMTk5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Tenet"/>
+        <div class="info">
+            <h3>Tenet (2020)</h3>
+            <p class="genre">Genre: Sci-Fi, Action, Thriller</p>
+            <p><span class="label">Director:</span> Christopher Nolan</p>
+            <p><span class="label">Release Year:</span> 2020</p>
+            <p><span class="label">IMDb Rating:</span> 7.3/10</p>
+            <p><span class="label">Plot:</span> A secret agent is given a single word as his weapon and sent to prevent the onset of World War III. He must travel through time and bend the laws of nature to succeed.</p>
+            <p><span class="label">Notable:</span> Complex time inversion concept, practical effects, mind-bending action sequences.</p>
+        </div>
+    </div>
+
+    <div class="c">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_.jpg" alt="The Martian"/>
+        <div class="info">
+            <h3>The Martian (2015)</h3>
+            <p class="genre">Genre: Sci-Fi, Adventure</p>
+            <p><span class="label">Director:</span> Ridley Scott</p>
+            <p><span class="label">Release Year:</span> 2015</p>
+            <p><span class="label">IMDb Rating:</span> 8.0/10</p>
+            <p><span class="label">Plot:</span> An astronaut is mistakenly presumed dead and left behind on Mars, and must find a way to survive and signal Earth that he's alive.</p>
+            <p><span class="label">Notable:</span> Scientifically accurate, mix of humor and tension, problem-solving focus.</p>
+        </div>
+    </div>
+
+    <div class="c">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="Inception"/>
+        <div class="info">
+            <h3>Inception (2010)</h3>
+            <p class="genre">Genre: Sci-Fi, Action, Thriller</p>
+            <p><span class="label">Director:</span> Christopher Nolan</p>
+            <p><span class="label">Release Year:</span> 2010</p>
+            <p><span class="label">IMDb Rating:</span> 8.8/10</p>
+            <p><span class="label">Plot:</span> A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.</p>
+            <p><span class="label">Notable:</span> Complex layered narrative, stunning visual effects, ambiguous ending.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
